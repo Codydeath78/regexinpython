@@ -158,6 +158,7 @@ if __name__ == '__main__': #a quick way to type this line is: type "main" and th
     print("****Question 2****")
     someVars()
     print("****Question 3****")
+    mylis()
     print("****Question 4****")
     print("****Question 5****")
     print("****Question 6****")
