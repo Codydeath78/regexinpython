@@ -78,7 +78,9 @@ def printstr(input_str1, input_int1):
 #5. passing var to func and return
 ####
 
-#def funcvars(inputvar1, inputvar2):
+def funcvars(inputvar1, inputvar2):
+    result = inputvar1 + inputvar2
+    return result
     #add the input numbers together
     #returen the result
 
@@ -89,17 +91,29 @@ def printstr(input_str1, input_int1):
 #6. for loop
 ####
 
-#def go_over_list(mylis):
+def go_over_list(mylis):
+    for x in mylis:
+        print(x)
     #use for loop to go over the input list and print out items one by one
 
-#def go_over_list1():
+def go_over_list1():
+    for x in range(10,19):
+        print(x)
     #use for loop to directly print out numbers from 10 to 17
 
-#def go_over_list2(mylis):
+def go_over_list2(mylis):
+    for x in mylis:
+        x = x * 2
+    print(mylis)
     #use for loop & go over your list
     #multiply 2 to every item in your list, print results out
 
-#def go_over_list3(mylis):
+def go_over_list3(mylis):
+    resLis = []
+    for item in mylis:
+        result = item * 2
+        resLis.append(result)
+    return resLis
     #create an empty list resLis
     #go over items in the input list, multiply 2 to every item
     #add result one by one to resLis
@@ -111,7 +125,25 @@ def printstr(input_str1, input_int1):
 ####
 #7. while loop
 ####
+def whileloop_go_over_list(mylis):
+    index = 0 
+    while index < len(mylis):
+        print(mylis[index])
+        index +=1
 
+def whileloop_go_over_list1():
+    index = 10
+    while index < 19:
+        print(index)
+        index+=1
+
+def whileloop_go_over_list3(mylis):
+    resLis = []
+    index = 0
+    while index < len(mylis):
+        result = mylis[index] * 2
+        resLis.append(result)
+    return resLis
 #do all the problems in 6 using while loop instead
 
 
@@ -122,8 +154,14 @@ def printstr(input_str1, input_int1):
 #Your code would run.
 if __name__ == '__main__': #a quick way to type this line is: type "main" and then tab
     print("****Question 1****")
-    example()
+    printHello()
     print("****Question 2****")
+    someVars()
+    print("****Question 3****")
+    print("****Question 4****")
+    print("****Question 5****")
+    print("****Question 6****")
+    print("****Question 7****")
     #you can start call and run your functions here
 
 
